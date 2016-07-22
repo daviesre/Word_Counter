@@ -7,7 +7,7 @@
 ## Description/Specs
 
 | Behavior        | Input Example           | Output Example  | Reason |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| |:-------------:| -----:|
 | The user inputs a letter and one is returned | 'A' | 1 | A single letter such as 'A' is the exact requirement needed for this spec. |
 | The user inputs a word and one is returned | "cat" | 1 | I chose "cat" because it is a basic word that is not too long, yet recognizable as a noun. |
 | The user inputs multiple letters and the equivalent amount of a letter is returned | "A B" | 1 'A' | Adding "B" to a string of "A B" is the least complicated amount of letters I can add. |
