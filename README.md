@@ -8,17 +8,19 @@
 
 | Behavior        | Input Example           | Output Example  | Reason |
 | ------------- |:-------------:| -----:|
-| The user inputs a letter and one is returned | 'A' | 1 | A single letter such as 'A' is the exact requirement needed for this spec. |
-| The user inputs a word and one is returned | "cat" | 1 | I chose "cat" because it is a basic word that is not too long, yet recognizable as a noun. |
-| The user inputs multiple letters and the equivalent amount of a letter is returned | "A B" | 1 'A' | Adding "B" to a string of "A B" is the least complicated amount of letters I can add. |
-| The user inputs a sentence and the equivalent amount of a chosen word is returned | "How are you?" | 1 "are" | This is one of the most basic sentences in the English language to test for word frequency. |
-| The user inputs a word and sentence and returns the correct amount of the word regardless of capitalization | "APple APPLE apple" | 1 apple | This example shows off the many different ways a word can be capitalized and yet still return a correct result.|
-| The user inputs a sentence with common punctuaion and returns the correct amount of the word | "This is a test." | 1 test | Using a period is the most basic way a sentence could be messed up from a word count|
+| The user inputs a letter and one is returned | 'A' | 1 |
+| The user inputs a word and one is returned | "cat" | 1 |
+| The user inputs multiple letters and the equivalent amount of a letter is returned | "A B" | 1 'A' |
+| The user inputs a sentence and the equivalent amount of a chosen word is returned | "How are you?" | 1 "are" |
+| The user inputs a word and sentence and returns the correct amount of the word regardless of capitalization | "APple APPLE apple" | 1 apple |
+| The user inputs a sentence with common punctuation and returns the correct amount of the word | "This is a test." | 1 test |
 
-* Example
-
-
-
+* Behavior 1: A single letter such as 'A' is the exact requirement needed for this spec.
+* Behavior 2:  I chose "cat" because it is a basic word that is not too long, yet recognizable as a noun.
+* Behavior 3: Adding "B" to a string of "A B" is the least complicated amount of letters I can add.
+* Behavior 4: This is one of the most basic sentences in the English language to test for word frequency.
+* Behavior 5: This input shows off the many different ways a word can be capitalized and yet still return a correct result.
+* Behavior 6:  Using a period is the most basic way a sentence could be messed up from a word count
 
 ## Setup
 
