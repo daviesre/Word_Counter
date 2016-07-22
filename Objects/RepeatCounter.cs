@@ -33,6 +33,21 @@ namespace WordCounter
 
     public int CountRepeats(string inputword, string sentence)
     {
+      sentence=sentence.Replace("!","");
+      sentence=sentence.Replace("?","");
+      sentence=sentence.Replace(".","");
+      sentence=sentence.Replace(",","");
+      sentence=sentence.Replace(";","");
+      sentence=sentence.Replace(":","");
+      sentence=sentence.Replace("'","");
+      sentence=sentence.Replace("-","");
+      sentence=sentence.Replace("(","");
+      sentence=sentence.Replace(")","");
+      sentence=sentence.Replace("{","");
+      sentence=sentence.Replace("}","");
+      sentence=sentence.Replace("[","");
+      sentence=sentence.Replace("]","");
+      
       string noCaps = sentence.ToLower();
       string noCapsWord = inputword.ToLower();
       string[] wordArray = noCaps.Split(' ');

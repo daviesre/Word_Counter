@@ -56,7 +56,7 @@ namespace WordCounter
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter();
       int myWordResult = myRepeatCounter.CountRepeats(myWord, mySentence);
-      Console.WriteLine(myWordResult);
+
       //Assert
       Assert.Equal(myResult, myWordResult);
     }
@@ -71,7 +71,7 @@ namespace WordCounter
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter();
       int myWordResult = myRepeatCounter.CountRepeats(myWord, mySentence);
-      Console.WriteLine(myWordResult);
+
       //Assert
       Assert.Equal(myResult, myWordResult);
     }
@@ -79,7 +79,16 @@ namespace WordCounter
     [Fact]
     public void CountRepeats_ReturnsCorrectNumberAfterPunctuation_NumberofWords()
     {
+      //Arrange
+      string myWord = "well";
+      string mySentence = "Are you well well? I am well!!!";
+      int myResult = 2;
+      //Act
+      RepeatCounter myRepeatCounter = new RepeatCounter();
+      int myWordResult = myRepeatCounter.CountRepeats(myWord, mySentence);
 
+      //Assert
+      Assert.Equal(myResult, myWordResult);
     }
 
   }
