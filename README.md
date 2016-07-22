@@ -6,7 +6,7 @@
 
 ## Description/Specs
 
-| Behavior        | Input Example           | Output Example  | Reason |
+| Behavior        | Input Example           | Output Example  | 
 | ------------- |:-------------:| -----:|
 | The user inputs a letter and one is returned | 'A' | 1 |
 | The user inputs a word and one is returned | "cat" | 1 |
