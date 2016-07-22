@@ -81,7 +81,7 @@ namespace WordCounter
     {
       //Arrange
       string myWord = "well";
-      string mySentence = "Are you well well? I am well!!!";
+      string mySentence = "Are you well? I am well.";
       int myResult = 2;
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter();
