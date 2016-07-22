@@ -5,6 +5,37 @@ namespace WordCounter
 {
   public class RepeatCounter
   {
+    //properties
+    private string _word;
+    private string _sentence;
+
+    //construcor
+    public RepeatCounter(string word, string sentence)
+    {
+      _word = word;
+      _sentence = sentence;
+    }
+    //Getters and Setters
+    public string GetWord()
+    {
+      return _word;
+    }
+
+    public void SetWord(string newword)
+    {
+      _word = newword;
+    }
+
+    public string GetSentence()
+    {
+      return _sentence;
+    }
+
+    public void SetSentence(string newsentence)
+    {
+      _sentence = newsentence;
+    }
+
     //Methods
     public int LetterCount(char myLetter)
     {
@@ -47,7 +78,7 @@ namespace WordCounter
       sentence=sentence.Replace("}","");
       sentence=sentence.Replace("[","");
       sentence=sentence.Replace("]","");
-      
+
       string noCaps = sentence.ToLower();
       string noCapsWord = inputword.ToLower();
       string[] wordArray = noCaps.Split(' ');
