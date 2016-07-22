@@ -15,7 +15,9 @@ namespace WordCounter
       RepeatCounter myRepeatCounter = new RepeatCounter();
       char myLetterResult = myRepeatCounter.LetterCount(myLetter);
       //Assert
-      Assert.Equal('1', myLetterResult);
+      Assert.Equal('2', myLetterResult);
     }
+
+
   }
 }
