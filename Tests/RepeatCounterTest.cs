@@ -65,7 +65,7 @@ namespace WordCounter
     public void CountRepeats_ReturnsCorrectNumberAfterCapitalizedWord_NumberOfWords()
     {
       //Arrange
-      string myWord = "apple";
+      string myWord = "APple";
       string mySentence = "there is an apple Apple APPLE";
       int myResult = 3;
       //Act
