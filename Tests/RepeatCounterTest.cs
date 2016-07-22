@@ -38,7 +38,7 @@ namespace WordCounter
       //Arrange
       string myLetters = "A";
       string mySentence = "A B C";
-      int myResult = 1;
+      int myResult = 2;
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter();
       int myLettersResult = myRepeatCounter.LetterAmount(myLetters, mySentence);
