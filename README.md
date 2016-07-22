@@ -1,6 +1,6 @@
 # _Word Counter with C#, Nancy, and Razor_
 
-#### _A site counting the frequency of an inputed word in a sentence_
+#### _A site counting the frequency of a word in a sentence_
 
 #### By _**Russ Davies**_
 
