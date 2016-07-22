@@ -13,6 +13,7 @@
 | The user inputs multiple letters and the equivalent amount of a letter is returned | "A B" | 1 'A' | Adding "B" to a string of "A B" is the least complicated amount of letters I can add. |
 | The user inputs a sentence and the equivalent amount of a chosen word is returned | "How are you?" | 1 "are" | This is one of the most basic sentences in the English language to test for word frequency. |
 | The user inputs a word and sentence and returns the correct amount of the word regardless of capitalization | "APple APPLE apple" | 1 apple | This example shows off the many different ways a word can be capitalized and yet still return a correct result.|
+| The user inputs a sentence with common punctuaion and returns the correct amount of the word | "This is a test." | 1 test | Using a period is the most basic way a sentence could be messed up from a word count|
 
 * Example
 
