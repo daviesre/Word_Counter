@@ -6,14 +6,30 @@ namespace WordCounter
   public class RepeatCounter
   {
     //Methods
-    public char LetterCount(char myLetter)
+    public int LetterCount(char myLetter)
     {
-      return '1';
+      return 1;
     }
 
-    public string WordCount(string myWord)
+    public int WordCount(string myWord)
     {
-      return "1";
+      return 1;
     }
+
+    public int LetterAmount(string inputletter, string sentence)
+    {
+      string[] lettersArray = sentence.Split(' ');
+      int numberOfLetter = 0;
+
+      foreach(var letter in lettersArray)
+      {
+        if (letter == inputletter)
+        {
+          numberOfLetter++;
+        }
+      }
+      return numberOfLetter;
+    }
+
   }
 }
