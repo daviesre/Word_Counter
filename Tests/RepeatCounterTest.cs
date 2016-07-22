@@ -52,6 +52,21 @@ namespace WordCounter
       //Arrange
       string myWord = "apple";
       string mySentence = "there is an apple apple apple";
+      int myResult = 3;
+      //Act
+      RepeatCounter myRepeatCounter = new RepeatCounter();
+      int myWordResult = myRepeatCounter.CountRepeats(myWord, mySentence);
+      Console.WriteLine(myWordResult);
+      //Assert
+      Assert.Equal(myResult, myWordResult);
+    }
+
+    [Fact]
+    public void CountRepeats_ReturnsCorrectNumberAfterCapitalizedWord_NumberOfWords()
+    {
+      //Arrange
+      string myWord = "apple";
+      string mySentence = "there is an apple Apple APPLE";
       int myResult = 2;
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter();
@@ -59,6 +74,7 @@ namespace WordCounter
       Console.WriteLine(myWordResult);
       //Assert
       Assert.Equal(myResult, myWordResult);
+
     }
 
 
