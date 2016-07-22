@@ -33,7 +33,8 @@ namespace WordCounter
 
     public int CountRepeats(string inputword, string sentence)
     {
-      string[] wordArray = sentence.Split(' ');
+      string noCaps = sentence.ToLower();
+      string[] wordArray = noCaps.Split(' ');
       int numberOfWords = 0;
 
       foreach(var word in wordArray)

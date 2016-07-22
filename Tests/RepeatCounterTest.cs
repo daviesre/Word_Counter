@@ -67,14 +67,13 @@ namespace WordCounter
       //Arrange
       string myWord = "apple";
       string mySentence = "there is an apple Apple APPLE";
-      int myResult = 2;
+      int myResult = 3;
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter();
       int myWordResult = myRepeatCounter.CountRepeats(myWord, mySentence);
       Console.WriteLine(myWordResult);
       //Assert
       Assert.Equal(myResult, myWordResult);
-
     }
 
 
