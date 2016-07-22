@@ -38,12 +38,27 @@ namespace WordCounter
       //Arrange
       string myLetters = "A";
       string mySentence = "A B C";
-      int myResult = 2;
+      int myResult = 1;
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter();
       int myLettersResult = myRepeatCounter.LetterAmount(myLetters, mySentence);
       //Assert
       Assert.Equal(myResult, myLettersResult);
+    }
+
+    [Fact]
+    public void CountRepeats_ReturnsCorrectNumberAfterInputWord_NumberOfWords()
+    {
+      //Arrange
+      string myWord = "apple";
+      string mySentence = "there is an apple apple apple";
+      int myResult = 2;
+      //Act
+      RepeatCounter myRepeatCounter = new RepeatCounter();
+      int myWordResult = myRepeatCounter.CountRepeats(myWord, mySentence);
+      Console.WriteLine(myWordResult);
+      //Assert
+      Assert.Equal(myResult, myWordResult);
     }
 
 

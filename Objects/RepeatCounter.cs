@@ -31,5 +31,20 @@ namespace WordCounter
       return numberOfLetter;
     }
 
+    public int CountRepeats(string inputword, string sentence)
+    {
+      string[] wordArray = sentence.Split(' ');
+      int numberOfWords = 0;
+
+      foreach(var word in wordArray)
+      {
+        if (word == inputword)
+        {
+          numberOfWords++;
+        }
+      }
+      return numberOfWords;
+    }
+
   }
 }
