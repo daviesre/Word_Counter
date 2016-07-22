@@ -26,7 +26,7 @@ namespace WordCounter
       RepeatCounter myRepeatCounter = new RepeatCounter();
       string myWordResult = myRepeatCounter.WordCount(myWord);
       //Assert
-      Assert.Equal("2", myWordResult);
+      Assert.Equal("1", myWordResult);
     }
 
   }
