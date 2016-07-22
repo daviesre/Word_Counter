@@ -12,6 +12,7 @@
 | The user inputs a word and one is returned | "cat" | 1 | I chose "cat" because it is a basic word that is not too long, yet recognizable as a noun. |
 | The user inputs multiple letters and the equivalent amount of a letter is returned | "A B" | 1 'A' | Adding "B" to a string of "A B" is the least complicated amount of letters I can add. |
 | The user inputs a sentence and the equivalent amount of a chosen word is returned | "How are you?" | 1 "are" | This is one of the most basic sentences in the English language to test for word frequency. |
+| The user inputs a word and sentence and returns the correct amount of the word regardless of capitalization | "APple APPLE apple" | 1 apple | This example shows off the many different ways a word can be capitalized and yet still return a correct result.|
 
 * Example
 
