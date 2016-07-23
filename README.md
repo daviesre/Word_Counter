@@ -6,7 +6,7 @@
 
 ## Description
 
-This site will allow the user to find the frequency of a desired word in any sentence they enter. 
+This site will allow the user to find the frequency of a desired word in any sentence they enter.
 
 ## Specs
 
@@ -37,7 +37,7 @@ This site will allow the user to find the frequency of a desired word in any sen
 No known bugs
 
 ## Support and contact details
-Please Russ Davies at russdavies392@gmail.com if you have any questions.
+Please contact Russ Davies at russdavies392@gmail.com if you have any questions.
 
 ## Technologies Used
 * C#
@@ -47,6 +47,6 @@ Please Russ Davies at russdavies392@gmail.com if you have any questions.
 * CSS
 
 ### License
-Copyright (c) 2016 _**Russ Davies **_
+Copyright (c) 2016 Russ Davies 
 
 This software is licensed under the MIT license.
