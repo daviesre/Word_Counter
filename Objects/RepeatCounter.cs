@@ -44,6 +44,7 @@ namespace WordCounter
     }
 
     //Methods
+    
     // public int LetterCount(char myLetter)
     // {
     //   return 1;
@@ -77,7 +78,6 @@ namespace WordCounter
       inputsentence=inputsentence.Replace(",","");
       inputsentence=inputsentence.Replace(";","");
       inputsentence=inputsentence.Replace(":","");
-      inputsentence=inputsentence.Replace("'","");
       inputsentence=inputsentence.Replace("-","");
 
       string noCaps = inputsentence.ToLower();

@@ -4,9 +4,13 @@
 
 #### By _**Russ Davies**_
 
-## Description/Specs
+## Description
 
-| Behavior        | Input Example           | Output Example  | 
+This site will allow the user to find the frequency of a desired word in any sentence they enter. 
+
+## Specs
+
+| Behavior        | Input Example           | Output Example  |
 | ------------- |:-------------:| -----:|
 | The user inputs a letter and one is returned | 'A' | 1 |
 | The user inputs a word and one is returned | "cat" | 1 |
@@ -24,16 +28,23 @@
 
 ## Setup
 
- Clone this repository, and on your pre-configured Epicodus computer, run "DNU restore" at the PowerShell prompt in the top directory of the cloned repository. Then type in "DNX Kestrel" at the same prompt and a local instance of the kestrel server will boot. Navigate in your browser to "LocalHost:5004" to view the homepage.
+ 1. Clone this repository
+ 2. Run "DNU restore" on PowerShell in the cloned repository.
+ 3. Then type in "DNX Kestrel" and enter.
+ 4. Go to your web browser and type in "LocalHost:5004" to view the homepage.
 
 ## Known Bugs
 No known bugs
 
 ## Support and contact details
-Please contact the authors if you have any questions or comments.
+Please Russ Davies at russdavies392@gmail.com if you have any questions.
 
 ## Technologies Used
-This webpage was written using C#, Nancy, and Razor.
+* C#
+* Nancy
+* Razor
+* Bootstrap
+* CSS
 
 ### License
 Copyright (c) 2016 _**Russ Davies **_
