@@ -8,6 +8,7 @@ namespace WordCounter
     //properties
     private string _word;
     private string _sentence;
+    private int _numberOfWords;
 
     //construcor
     public RepeatCounter(string word, string sentence)
@@ -15,15 +16,16 @@ namespace WordCounter
       _word = word;
       _sentence = sentence;
     }
+
     //Getters and Setters
     public string GetWord()
     {
       return _word;
     }
 
-    public void SetWord(string newword)
+    public void SetWord(string inputword)
     {
-      _word = newword;
+      _word = inputword;
     }
 
     public string GetSentence()
@@ -31,67 +33,65 @@ namespace WordCounter
       return _sentence;
     }
 
-    public void SetSentence(string newsentence)
+    public void SetSentence(string inputsentence)
     {
-      _sentence = newsentence;
+      _sentence = inputsentence;
+    }
+
+    public int GetNumber()
+    {
+      return _numberOfWords;
     }
 
     //Methods
-    public int LetterCount(char myLetter)
+    // public int LetterCount(char myLetter)
+    // {
+    //   return 1;
+    // }
+    //
+    // public int WordCount(string myWord)
+    // {
+    //   return 1;
+    // }
+    //
+    // public int LetterAmount(string inputletter, string sentence)
+    // {
+    //   string[] lettersArray = sentence.Split(' ');
+    //   int numberOfLetter = 0;
+    //
+    //   foreach(var letter in lettersArray)
+    //   {
+    //     if (letter == inputletter)
+    //     {
+    //       numberOfLetter++;
+    //     }
+    //   }
+    //   return numberOfLetter;
+    // }
+
+    public int CountRepeats(string inputword, string inputsentence)
     {
-      return 1;
-    }
+      // inputsentence=inputsentence.Replace("!","");
+      // inputsentence=inputsentence.Replace("?","");
+      // inputsentence=inputsentence.Replace(".","");
+      // inputsentence=inputsentence.Replace(",","");
+      // inputsentence=inputsentence.Replace(";","");
+      // inputsentence=inputsentence.Replace(":","");
+      // inputsentence=inputsentence.Replace("'","");
+      // inputsentence=inputsentence.Replace("-","");
 
-    public int WordCount(string myWord)
-    {
-      return 1;
-    }
-
-    public int LetterAmount(string inputletter, string sentence)
-    {
-      string[] lettersArray = sentence.Split(' ');
-      int numberOfLetter = 0;
-
-      foreach(var letter in lettersArray)
-      {
-        if (letter == inputletter)
-        {
-          numberOfLetter++;
-        }
-      }
-      return numberOfLetter;
-    }
-
-    public int CountRepeats(string inputword, string sentence)
-    {
-      sentence=sentence.Replace("!","");
-      sentence=sentence.Replace("?","");
-      sentence=sentence.Replace(".","");
-      sentence=sentence.Replace(",","");
-      sentence=sentence.Replace(";","");
-      sentence=sentence.Replace(":","");
-      sentence=sentence.Replace("'","");
-      sentence=sentence.Replace("-","");
-      sentence=sentence.Replace("(","");
-      sentence=sentence.Replace(")","");
-      sentence=sentence.Replace("{","");
-      sentence=sentence.Replace("}","");
-      sentence=sentence.Replace("[","");
-      sentence=sentence.Replace("]","");
-
-      string noCaps = sentence.ToLower();
+      string noCaps = inputsentence.ToLower();
       string noCapsWord = inputword.ToLower();
       string[] wordArray = noCaps.Split(' ');
-      int numberOfWords = 0;
 
       foreach(var word in wordArray)
       {
         if (word == noCapsWord)
         {
-          numberOfWords++;
+          _numberOfWords++;
         }
       }
-      return numberOfWords;
+      return _numberOfWords;
     }
   }
 }
