@@ -11,7 +11,7 @@ namespace WordCounter
     {
       //Arrange
       string myLetter = "A";
-      string mySentence = "A B";
+      string mySentence = "A";
       int myResult = 1;
       //Act
       RepeatCounter myRepeatCounter = new RepeatCounter(myLetter, mySentence);
