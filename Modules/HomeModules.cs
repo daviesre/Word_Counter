@@ -14,9 +14,7 @@ namespace WordCounter
       Post["/wordcounter_generated"] = _ =>
       {
         RepeatCounter newRepeat = new RepeatCounter(Request.Form["word"], Request.Form["sentence"]);
-        string newString1 = newRepeat.GetWord();
-        string newString2 = newRepeat.GetSentence();
-        int newInt = newRepeat.CountRepeats(newString1, newString2);
+        int newInt = newRepeat.CountRepeats();
         return View["/wordcounter_generated.cshtml", newRepeat];
       };
 

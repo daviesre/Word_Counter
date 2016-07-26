@@ -44,34 +44,43 @@ namespace WordCounter
     }
 
     //Methods
-    
-    // public int LetterCount(char myLetter)
-    // {
-    //   return 1;
-    // }
-    //
-    // public int WordCount(string myWord)
-    // {
-    //   return 1;
-    // }
-    //
-    // public int LetterAmount(string inputletter, string sentence)
-    // {
-    //   string[] lettersArray = sentence.Split(' ');
-    //   int numberOfLetter = 0;
-    //
-    //   foreach(var letter in lettersArray)
-    //   {
-    //     if (letter == inputletter)
-    //     {
-    //       numberOfLetter++;
-    //     }
-    //   }
-    //   return numberOfLetter;
-    // }
 
-    public int CountRepeats(string inputword, string inputsentence)
+    public int LetterCount()
     {
+      string inputletter = this.GetWord();
+      string inputsentence = this.GetSentence();
+      return 1;
+    }
+
+    public int WordCount()
+    {
+      string inputletter = this.GetWord();
+      string inputsentence = this.GetSentence();
+      return 1;
+    }
+    //
+    public int LetterAmount()
+    {
+      string inputletter = this.GetWord();
+      string inputsentence = this.GetSentence();
+      string[] lettersArray = inputsentence.Split(' ');
+      int numberOfLetter = 0;
+
+      foreach(var letter in lettersArray)
+      {
+        if (letter == inputletter)
+        {
+          numberOfLetter++;
+        }
+      }
+      return numberOfLetter;
+    }
+
+    public int CountRepeats()
+    {
+      string inputword = this.GetWord();
+      string inputsentence = this.GetSentence();
+
       inputsentence=inputsentence.Replace("!","");
       inputsentence=inputsentence.Replace("?","");
       inputsentence=inputsentence.Replace(".","");
